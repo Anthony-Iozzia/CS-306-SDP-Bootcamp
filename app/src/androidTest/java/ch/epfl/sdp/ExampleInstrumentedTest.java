@@ -25,3 +25,4 @@ public class ExampleInstrumentedTest {
         assertEquals("ch.epfl.sdp", appContext.getPackageName());
     }
 }
+//d
