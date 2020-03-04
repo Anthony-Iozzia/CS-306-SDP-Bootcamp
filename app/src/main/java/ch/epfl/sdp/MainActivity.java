@@ -18,9 +18,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /** Called when the user taps the Send button */
+    @SuppressWarnings("unused")
     public void sendMessage(View view) {
         Intent intent = new Intent(this, GreetingActivity.class);
-        EditText editText = (EditText) findViewById(R.id.mainName);
+        EditText editText = findViewById(R.id.mainName);
         String message = editText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
